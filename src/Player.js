@@ -23,6 +23,8 @@ export default class Player extends React.Component {
             <ButtonCounter />
             <ButtonCounter />
             <ButtonCounter />
+            <ButtonCounter />
+
         </div>
       </div>
     )
