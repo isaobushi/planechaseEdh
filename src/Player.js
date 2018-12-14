@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonCounter from './ButtonCounter.js'
 
 export default class Player extends React.Component {
   constructor(props){
@@ -17,33 +18,11 @@ export default class Player extends React.Component {
     return(
       <div>
         <div className="player">
-            <div className="name">{name}</div>
-
-              <div className="life">Life: {life}
-                <button className="life-plus">+</button>
-                <button className="life-minus">-</button>
-              </div>
-
-              <div className="poison-damage">Poison: {poison}
-                <button className="life-plus">+</button>
-                <button className="life-minus">-</button>
-              </div>
-
-              <div className="command-damage">Damage from Player One {playerTwoDamage}
-                <button className="life-plus">+</button>
-                <button className="life-minus">-</button>
-              </div>
-
-              <div className="command-damage">Damage from Player Two{playerTwoDamage}
-                <button className="life-plus">+</button>
-                <button className="life-minus">-</button>
-              </div>
-
-              <div className="command-damage">Damage from Player Three{playerThreeDamage}
-                <button className="life-plus">+</button>
-                <button className="life-minus">-</button>
-              </div>
-
+            <ButtonCounter />
+            <ButtonCounter />
+            <ButtonCounter />
+            <ButtonCounter />
+            <ButtonCounter />
         </div>
       </div>
     )
